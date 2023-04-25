@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Directory - NearbyUs</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"><img src="images/favicon.png" alt="logo" ></a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="tourism.html">tourism</a>
+      <a href="internals.html">subdistricts & blocks</a>
+      <a href="citizen services.html">citizen services</a>
+      <a href="directory.html">directory</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" placeholder="Enter your Password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" id="pswd1" placeholder="Enter your Password" class="box" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="pswd2" placeholder="confirm your password" class="box" required>
+      <input type="submit" value="register now" class="btn" onclick="matchPassword()">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>Directory</h3>
+   <p> <a href="index.html">home</a> / directory </p>
+</section>
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+   <h1 class="heading"> Helpline</h1>
+
+   <div class="icons-container">
+
+      <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Child Helpline</h3>
+        <p>1098</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>Women Helpline</h3>
+         <p>1091</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Police</h3>
+        <p>100</p>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Ambulance</h3>
+        <p>108</p>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Election</h3>
+        <p>1950</p>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>National Informatics Services</h3>
+        <p>1800111555</p>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Aadhar Helpline</h3>
+        <p>1947</p>
+     </div>
+
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>CM Helpline</h3>
+        <p>181</p>
+     </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- contact directory table starts -->
+
+<h3 class="heading">Contact Directory</h3>
+<table class="contact-dir">
+    <thead class="contact-dir-1">
+        <tr>
+            <th>Sr.No</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th>E-mail</th>
+            <th>Contact Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Revenue District Headquarter</td>
+            <td>Deputy Collector</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Revenue District Headquarter</td>
+            <td>Joint Collector</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Revenue District Headquarter</td>
+            <td>Joint Collector</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Revenue District Headquarter</td>
+            <td>Deputy Collector</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Revenue District Headquarter</td>
+            <td>Probation period Deputy Collector</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Sub Divisional Magistrate Office, Mandsaur</td>
+            <td>Deputy Collector and S.D.M (Revenue)</td>
+            <td>sdomandsaur-mp@nic.in</td>
+            <td>07422-235206</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sub Divisional Magistrate Office, Sitamau</td>
+            <td>&nbsp;</td>
+            <td>sdositmas-mp@nic.in</td>
+            <td>07426-222039</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Sub Divisional Magistrate Office, Malhargargh</td>
+            <td>Deputy Collector and S.D.M(Revenue)</td>
+            <td>sdosmalmas-mp@nic.in</td>
+            <td>07424-248338</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sub Divisional Magistrate Office, Garoth</td>
+            <td>Deputy Collector and S.D.M(Revenue)</td>
+            <td>sdogarmas-mp@nic.in</td>
+            <td>07425-238101</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Tehsil office, Urban Mandsaur</td>
+            <td>Tehsidar</td>
+            <td>tehmandsaur-mp@nic.in</td>
+            <td>07422-235036</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Tehsil office, Rural Mandsaur</td>
+            <td>In ChargeTehsidar, Nayab Tehsildar</td>
+            <td>&nbsp;</td>
+            <td>9893195671</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Tehsil office, Daloda</td>
+            <td>In Charge Tehsidar,Nayab Tehsildar</td>
+            <td>daloda08@gmail.com</td>
+            <td>9907560696</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Tehsil office, Sitmamau</td>
+            <td>Tehsildar</td>
+            <td>tehsitmas-mp@nic.in</td>
+            <td>07424-222093</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Tehsil office, Sitmamau</td>
+            <td>Nayab Tehsildar</td>
+            <td>&nbsp;</td>
+            <td>8458955067</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Tehsil office, Sitmamau</td>
+            <td>Nayab Tehsildar</td>
+            <td>&nbsp;</td>
+            <td>9555899091</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Tehsil office, Sitamau</td>
+            <td>Nayab Tehsildar,Kayampur (Probation)</td>
+            <td>&nbsp;</td>
+            <td>9165191441</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Tehsil office, Suwasara</td>
+            <td>Nayab Tehsildar</td>
+            <td>tehsuwmas-mp@nic.in</td>
+            <td>9826620286</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Tehsil office, Suwasara</td>
+            <td>Nayab Tehsildar(probation)</td>
+            <td>&nbsp;</td>
+            <td>07427-236607</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Tehsil office, Malhargargh</td>
+            <td>Tehsildar</td>
+            <td>tehmalmas-mp@nic.in</td>
+            <td>07424-248579</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Tehsil office, Malhargargh</td>
+            <td>Nayab Tehsildar,Tappa Sanjit</td>
+            <td>&nbsp;</td>
+            <td>9406614692</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Tehsil office, Malhargargh</td>
+            <td>Nayab Tehsildar(probation)</td>
+            <td>&nbsp;</td>
+            <td>8120454744</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Tehsil office, Garoth</td>
+            <td>Tehsildar</td>
+            <td>tehgarmas-mp@nic.in</td>
+            <td>9425196205</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Tehsil office, Shamgargh</td>
+            <td>Tehsildar</td>
+            <td>tehsildar.shamgarh@gmail.com</td>
+            <td>07425-232201</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Tehsil office, Shamgargh</td>
+            <td>Nayab Tehsildar</td>
+            <td>&nbsp;</td>
+            <td>9617760063</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Tehsil office, Bhanpura</td>
+            <td>Nayab Tehsildar,Bhanpura</td>
+            <td>tehbhamas-mp@nic.in</td>
+            <td>7000032105</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Tehsil office, Bhanpura</td>
+            <td>Nayab Tehsildar,Bhanpura(Probation)</td>
+            <td>&nbsp;</td>
+            <td>9425762400</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Janpad Panchayt office, Mandsaur</td>
+            <td>C.E.O Janpad Panchayt Mandsaur</td>
+            <td>jpmandsaur-mp@nic.in</td>
+            <td>07422-223039</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Janpad Panchayt office, Sitamau</td>
+            <td>C.E.O Janpad Panchayt ,Sitamau</td>
+            <td>jpsitmas-mp@nic.in</td>
+            <td>07424-248329 </td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Janpad Panchayt office, Malhargargh</td>
+            <td>C.E.O Janpad Panchayt Malhargargh</td>
+            <td>jpmalamas-mp@nic.in</td>
+            <td>07426-222033</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Janpad Panchayt office, Garoth</td>
+            <td>C.E.O Janpad Panchayt Garoth</td>
+            <td>jpgarmas-mp@nic.in</td>
+            <td>07425-238642</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Janpad Panchayt office, Bhanpura</td>
+            <td>C.E.O Janpad Panchayt ,Bhanpura</td>
+            <td>jpbhamas-mp@nic.in</td>
+            <td>07427-236642</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>District Treasury Office, Mandsaur</td>
+            <td>Tresaury officer</td>
+            <td>tomandsaur@gmail.com</td>
+            <td>07422-235308</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>District food and supply Office, Mandsaur</td>
+            <td>Food and supply officer</td>
+            <td>foodoffmas-mp@nic.in</td>
+            <td>07422-235115</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>District Planning Office, Mandsaur</td>
+            <td>Planning officer</td>
+            <td>dpomas-mp@nic.in</td>
+            <td>07422-235445</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>District Industry Office, Mandsaur</td>
+            <td>Industry officer</td>
+            <td>gmimas@nic.in</td>
+            <td>07422-223142</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>District Court Office, Mandsaur</td>
+            <td>&nbsp;</td>
+            <td>dcourtmas-mp@nic.in</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>District Twelfare, Mandsaur</td>
+            <td>DTWO</td>
+            <td>twelfaremas@mp.nic.in</td>
+            <td>07422-235318</td>
+        </tr>
+    </tbody>
+</table>
+<!-- contact directory table ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+    <div class="row">
+       <div class="footer-col">
+          <h4>Nearby Us</h4>
+          <ul>
+            <li><a href="subHTML/about us.html">about us</a></li>
+            <li><a href="subHTML/feedback.html">send feedback</a></li>
+            <li><a href="subHTML/privacy policy.html">privacy policy</a></li>
+            <li><a href="subHTML/terms & conditions.html">terms & conditions</a></li>
+          </ul>
+       </div>
+       <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+             <li><a href="https://mphc.gov.in/" target="_blank">MP High Court</a></li>
+             <li><a href="http://mpedistrict.gov.in/MPL/Home.aspx" target="_blank">MP e-District Portal</a></li>
+             <li><a href="https://www.mppolice.gov.in/en" target="_blank">MP Police Portal</a></li>
+             <li><a href="https://cmhelpline.mp.gov.in/Mpsamadhan/" target="_blank">MP Samadhan Portal</a></li>
+          </ul>
+       </div>
+       <div class="footer-col">
+        <h4>newsletter</h4>
+        <p>subscribe for latest upadates</p>
+        <form action="">
+           <input type="email" name="" placeholder="Enter your Email" id="" class="email" required>
+           <input type="submit" value="subscribe" class="btn" onclick="submitted()">
+        </form>
+       </div>
+       <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+           <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+           <a href="https://instagram.com/accounts/login" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+           <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
+       </div>
+    </div>
+    <div class="copyright"> Copyright &#169;<span>Nearby Us</span> All Rights Reserved.</div>
+</section>
+ 
+<!-- footer section ends -->
+ 
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

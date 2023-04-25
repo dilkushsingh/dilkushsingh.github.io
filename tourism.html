@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tourism - NearbyUs</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"><img src="images/favicon.png" alt="logo" ></a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="tourism.html">tourism</a>
+      <a href="internals.html">subdistricts & blocks</a>
+      <a href="citizen services.html">citizen services</a>
+      <a href="directory.html">directory</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" placeholder="Enter your Password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" id="pswd1" placeholder="Enter your Password" class="box" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="pswd2" placeholder="confirm your password" class="box" required>
+      <input type="submit" value="register now" class="btn" onclick="matchPassword()">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->]
+
+<!-- contents section starts -->
+
+<section class="heading-link">
+   <h3>Tourism</h3>
+   <p> <a href="index.html">home</a> / tourism</p>
+</section>
+
+<section class="tourist-places">
+
+   <h1 class="heading"> Popular tourist places </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/pashupatinath.jpg" alt="">
+            <h3>Temple</h3>
+         </div>
+         <div class="content">
+            <h3>Pashupatinath Temple</h3>
+            <p>Known for eight-face shivalinga. Only one temple of lord pashupatinath in whole India.</p>
+            <a href="subHTML/pashupatinath.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur </span>
+               <span> <i class="fas fa-road"></i> 4 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/gandhi-sagar.jpg" alt="">
+            <h3>Manmade Dam</h3>
+         </div>
+         <div class="content">
+            <h3>Gandhisagar Dam</h3>
+            <p>One of the major water reservoirs in India. Also a 115-MW hydroelectric powerstation.</p>
+            <a href="subHTML/gandhisagar.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 168 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/dhramrajeshwar.jpg" alt="">
+            <h3>Ancient Temple</h3>
+         </div>
+         <div class="content">
+            <h3>Dhramrajeshwar Temple</h3>
+            <p>Ancient Hindu cave temple site of 4th-5th century. Constructed using solid natural rock.</p>
+            <a href="subHTML/dharmrajeshwar.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 106 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/bhanpura.jpg" alt="">
+            <h3>Waterfall</h3>
+         </div>
+         <div class="content">
+            <h3>Bada Mahadev Waterfall</h3>
+            <p>Best picnic spot in nearby area. Natural waterfall is all over surrounded by nature.</p>
+            <a href="subHTML/bhanpura.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 125 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/chaturbhuj.jpg" alt="">
+            <h3>Rock Paintings</h3>
+         </div>
+         <div class="content">
+            <h3>Chaturbhuj Rock Paintings</h3>
+            <p>Chaturbhujnath Rock Shelters - An iconic site that portrays ancient lifestyle!</p>
+            <a href="subHTML/chaturbhuj.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 141 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/hinglajgadh.jpg" alt="">
+            <h3>Fort</h3>
+         </div>
+         <div class="content">
+            <h3>Hinglajgadh Fort</h3>
+            <p>Ancient fort situated near Bhanpura.There are many artistic sculptures of various periods.</p>
+            <a href="subHTML/hinglajgadh.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 165 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/pola-dungar.jpg" alt="">
+            <h3>Archaeological Site</h3>
+         </div>
+         <div class="content">
+            <h3>Pola Dungar</h3>
+            <p>Archaeological site in Garoth, preserved the memories of the Buddhist religion in Dashpur region.</p>
+            <a href="subHTML/pola-dungar.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 128 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/takhaji.jpg" alt="">
+            <h3>Nature</h3>
+         </div>
+         <div class="content">
+            <h3>Taksheshwar Takhaji</h3>
+            <p>Place of religious and historical importance with temple of Taxaka in Mandsaur district.</p>
+            <a href="subHTML/takhaji.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i>Mandsaur</span>
+               <span> <i class="fas fa-road"></i> 135 KM </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box hide">
+         <div class="image">
+            <img src="images/TT.jpg" alt="">
+            <h3>Natural view</h3>
+         </div>
+         <div class="content">
+            <h3>Teliya Talab</h3>
+            <p>Sunset was so beautiful and so satisfying. Great time in the lap of nature. so calm and peaceful place.</p>
+            <a href="subHTML/TT.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-map-marker"></i> Mandsaur </span>
+               <span> <i class="fas fa-road"></i> 4 KM </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+<section>
+   <h3 class="heading">How to Reach</h3>
+    <h3 class="sub-heading">By Air:</h3>
+     <p class="subPara">Mandsaur do not have any Airport. The two nearest Airports are Udaipur and Indore.  The Udaipur Airport is around 180 k.m in north-west  and  Indore Airport  is around 210 k.m  in South from mandsaur.</p>
+    <h3 class="sub-heading">By Rail:</h3>
+     <p class="subPara">Mandsaur has its  Railway station but nearest railway junctions are  at Shamgargh and  Ratlam where  all long distance trains stops.</p>
+    <h3 class="sub-heading">By Road:</h3>
+     <p class="subPara">Mandsaur is well connected with roads.  Nearby Neemuch district  is about 50 KM and Ratlam district is 85 KM , connected with Mhow-Neemuch Highway road.  It is also connected the  Rajasthan State border via Pratapgarh which is about 25KM away.</p>
+   <h3 class="heading">Accommodation(Hotel/Resort/Dharamsala)</h3>
+     <p class="subPara"><a href="https://www.google.com/travel/hotels/Mandsaur?g2lb=4208993%2C4223281%2C4242898%2C4253230%2C4254308%2C4258168%2C4260007%2C4262509%2C4264355%2C4265959%2C4270442%2C4273799%2C4274032%2C4274649%2C4250437%2C4251519%2C4265427%2C4270859&hl=en&gl=in&un=1&q=mandsaur%20accommodations&rp=OAFAAEgC&ictx=1&ved=2ahUKEwih9eqp-oHjAhWGOY8KHUHYCIUQjGp6BAgKEEk&hrf=CgUIiCcQACIDSU5SKhYKBwjjDxAGGBsSBwjjDxAGGBwYASgAsAEAWAGaAQoSCE1hbmRzYXVyogEVCgkvbS8wM3Qya2cSCE1hbmRzYXVykgECIAE&tcfs=Ei8KCS9tLzAzdDJrZxIITWFuZHNhdXIaGAoKMjAxOS0wNi0yNxIKMjAxOS0wNi0yOFIA" target="_blank">Hotels in Mandsaur.</a></p>
+</section>
+
+<!-- contents section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+   <div class="row">
+      <div class="footer-col">
+         <h4>Nearby Us</h4>
+         <ul>
+            <li><a href="subHTML/about us.html">about us</a></li>
+            <li><a href="subHTML/feedback.html">send feedback</a></li>
+            <li><a href="subHTML/privacy policy.html">privacy policy</a></li>
+            <li><a href="subHTML/terms & conditions.html">terms & conditions</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>Quick links</h4>
+         <ul>
+            <li><a href="https://mphc.gov.in/" target="_blank">MP High Court</a></li>
+            <li><a href="http://mpedistrict.gov.in/MPL/Home.aspx" target="_blank">MP e-District Portal</a></li>
+            <li><a href="https://www.mppolice.gov.in/en" target="_blank">MP Police Portal</a></li>
+            <li><a href="https://cmhelpline.mp.gov.in/Mpsamadhan/" target="_blank">MP Samadhan Portal</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>newsletter</h4>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="Enter your Email" id="" class="email" required>
+            <input type="submit" value="subscribe" class="btn" onclick="submitted()">
+         </form>
+      </div>
+      <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com/accounts/login" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="copyright"> Copyright &#169;<span>Nearby Us</span> All Rights Reserved.</div>
+</section>
+
+<!-- footer section ends -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

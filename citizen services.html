@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Citizen Services - NearbyUs</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"><img src="images/favicon.png" alt="logo"></a>
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="tourism.html">tourism</a>
+      <a href="internals.html">subdistricts & blocks</a>
+      <a href="citizen services.html">citizen services</a>
+      <a href="directory.html">directory</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" placeholder="Enter your Password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" id="pswd1" placeholder="Enter your Password" class="box" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="pswd2" placeholder="confirm your password" class="box" required>
+      <input type="submit" value="register now" class="btn" onclick="matchPassword()">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>Citizen Services</h3>
+   <p> <a href="index.html">home</a> / citizen services </p>
+</section>
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   <div class="">
+      <h3 class="sub-heading">Electricity</h3>
+      <p class="subPara">Mandsaur district gets covered in Madhya Pradesh Westt Zone Company which provide online link for Paying the electricity Bill.
+         One may use Smart Bijlee Android App for the same purpose which can be downloaded from Play Store.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://www.mpez.co.in/portal/Jabalpur_home.portal?_nfpb=true&_pageLabel=custCentre_viewBill_jbl">http://www.mpez.co.in/portal/Jabalpur_home.portal?_nfpb=true&_pageLabel=custCentre_viewBill_jbl</a></p>
+      <p class="subPara"> <strong>Location :</strong>Online from anywhere Payment can be done. <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Social Security-Samagra</h3>
+      <p class="subPara">M.P. Government programs intended to promote the welfare of the population through assistance measures guaranteeing access to sufficient 
+         resources for food and shelter and to promote health and well-being for the population at large and potentially vulnerable segments such as elderly, the sick and the unemployed.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://samagra.gov.in/">http://samagra.gov.in/</a></p>
+      <p class="subPara"> <strong>Location :</strong>Local Bodies of Mandsaur. <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Revenue Court Monitoring System</h3>
+      <p class="subPara">Revenue Court Monitoring System is a web based e-governance initiative of the Madhya Pradesh government through which information is provided to the citizens regarding their cases and helps in managing the functioning of different courts in a better and transparent manner.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://www.rcms.mp.gov.in/">http://www.rcms.mp.gov.in/</a></p>
+      <p class="subPara"> <strong>Location :</strong> Revenue Courts-Access online from anywhere. <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Domicile Certificate</h3>
+      <p class="subPara">Domicile certificate is an essential legal document for proving that a person is having a residence in a State. Domicile certificate allows a person to claim various facilities and schemes provided by the MP government.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://mpedistrict.gov.in/Public/show.aspx?param=3Dsf31RQXOO1Oysa3kAYN2WvYTFQlGKrXjsw/BnC7ooxpF+N6vZOzz4xcQtXWuzdbKCaLWJ50ik=">http://mpedistrict.gov.in/Public/show.aspx?param=3Dsf31RQXOO1Oysa3kAYN2WvYTFQlGKrXjsw/BnC7ooxpF+N6vZOzz4xcQtXWuzdbKCaLWJ50ik=</a></p>
+      <p class="subPara"> <strong>Location :</strong> Lok Seva Kendra <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Income Certificate</h3>
+      <p class="subPara">An income certificate is a document issued by an authority under the state government, certifying the annual income of a person from all sources. One of the main reasons to obtain an income certificate is to avail tax relaxations. Income certificate used as a legal document is furnished by individuals who benefit from various subsidies and welfare schemes implemented by the state and central government.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://mpedistrict.gov.in/Public/show.aspx?param=RPHRgd+Li7SZ0odQdPFH65e+iRG20XlCxnPxcTXgMZSXESXt4CA3COaZ38kSVzt45+v656Nzl6w=">http://mpedistrict.gov.in/Public/show.aspx?param=RPHRgd+Li7SZ0odQdPFH65e+iRG20XlCxnPxcTXgMZSXESXt4CA3COaZ38kSVzt45+v656Nzl6w=</a></p>
+      <p class="subPara"> <strong>Location :</strong> Lok Seva Kendra <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Birth Certificate</h3>
+      <p class="subPara">Birth or Death registration has been done in the State of M.P. as per Birth & Death Registration Act and M.P. Birth & Death Registration ruling. Accordingly every Birth is to be reported and registered at the place of its occurrence in the prescribed reporting forms.</p>
+      <p class="subPara">Application for obtaining Birth Certificate:- This Service of Planning, economic and statistics Department can be avail through various channels enabled by MP Govt. e.g. e-KYC, LSK, CSC, MPO Kiosks. For more details regarding Kiosk location, required document(s), timeline applicable fee etc kindly visit MP e-District Website.</p>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://www.mpedistrict.gov.in/">http://www.mpedistrict.gov.in/</a></p>
+      <p class="subPara"> <strong>Location :</strong> Lok Seva Kendra <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+
+   <div class="">
+      <h3 class="sub-heading">Caste Certificate</h3>
+      <p class="subPara">To provide caste certificate for Scheduled Castes, Scheduled Tribes.</p>
+      <p class="subPara">Documents to be enclosed with the application: </p>
+      <ol>
+         <li>1. For confirmation of caste – Record of immovable property recorded in the name of family member (grandfather / grandmother / great-grandfather / grandfather / father / mother / uncle / brother) (photocopy of land / plot / house registry or any other revenue record etc.) , In which the caste is mentioned. Or a family member (father / uncle / brother / sister / grandfather / father other than blood group) after the year 1996, the caste certificate issued by the Sub-divisional Officer (Revenue).</li>
+         <li>2. In the case of the year 1950 or before or after the family MP In order to confirm residence related proofs – Record of immovable property registered under the name of education / government service / voter identity card / family member (grandfather / grandmother / great-grandfather / grand-father / mother / uncle / brother) (land / plot / house Registry or any other revenue record etc.).</li>
+         <li>3. Photocopy of academic qualification certificates of the applicant himself.</li>
+         <li>4. Enclosed declaration regarding date of caste and residence.</li>
+      </ol>
+      <p class="subPara"> <strong>Visit :</strong> <a href="http://www.mpedistrict.gov.in/">http://www.mpedistrict.gov.in/</a></p>
+      <p class="subPara"> <strong>Location :</strong> Lok Seva Kendra <strong>City : </strong>Mandsaur. <strong>Pin Code : </strong>458001</p>
+   </div>
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+   <div class="row">
+      <div class="footer-col">
+         <h4>Nearby Us</h4>
+         <ul>
+            <li><a href="subHTML/about us.html">about us</a></li>
+            <li><a href="subHTML/feedback.html">send feedback</a></li>
+            <li><a href="subHTML/privacy policy.html">privacy policy</a></li>
+            <li><a href="subHTML/terms & conditions.html">terms & conditions</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>Quick links</h4>
+         <ul>
+            <li><a href="https://mphc.gov.in/" target="_blank">MP High Court</a></li>
+            <li><a href="http://mpedistrict.gov.in/MPL/Home.aspx" target="_blank">MP e-District Portal</a></li>
+            <li><a href="https://www.mppolice.gov.in/en" target="_blank">MP Police Portal</a></li>
+            <li><a href="https://cmhelpline.mp.gov.in/Mpsamadhan/" target="_blank">MP Samadhan Portal</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>newsletter</h4>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="Enter your Email" id="" class="email" required>
+            <input type="submit" value="subscribe" class="btn" onclick="submitted()">
+         </form>
+      </div>
+      <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com/accounts/login" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="copyright"> Copyright &#169;<span>Nearby Us</span> All Rights Reserved.</div>
+</section>
+
+<!-- footer section ends -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

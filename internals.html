@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Subdistricts & blocks - NearbyUs</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"><img src="images/favicon.png" alt="logo" ></a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="tourism.html">tourism</a>
+      <a href="internals.html">subdistricts & blocks</a>
+      <a href="citizen services.html">citizen services</a>
+      <a href="directory.html">directory</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" placeholder="Enter your Password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" id="pswd1" placeholder="Enter your Password" class="box" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="pswd2" placeholder="confirm your password" class="box" required>
+      <input type="submit" value="register now" class="btn" onclick="matchPassword()">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>Subdistricts and Blocks</h3>
+   <p> <a href="index.html">home</a> / subdistricts and blocks </p>
+</section>
+
+<div class="location">
+   <h3 class="heading">Map of District</h3>
+   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931183.081025297!2d74.84159467141858!3d24.26157041612789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39642e8f9cdaa9a1%3A0xf64177172d3f12c6!2sMandsaur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1655379607919!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- tehsil section starts  -->
+
+<section class="tehsils">
+
+   <h1 class="heading">Tehsils</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <h3>Mandsaur</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Mandsaur is a city and a municipality in Mandsaur district located on Border of Mewar and Malwa region. It is also famous for large production of Opium around the world. Mandsaur Krishi mandi is biggest Mandi of MP mostly in Area wise and Quantity of grains.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Malhargarh</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Malhargarh is a town (a nagar parishad) and a tehsil in Mandsaur district in the Indian state of Madhya Pradesh. It is located between Neemuch and Mandsaur on the Ratlam- Chittaurgarh Section of Indian railway. Malhargarh is rich in agriculture and part of the Malwa region.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Sitamau</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            In ancient time sitamau is called sitamau state or sitamau riyasat. The emperor of sitamau state is raja ram singh. Sitamau is a birth place of greatest literature pandit dr.raghuveer singh Which was born in 1907. He show the dignity of his knowledge about history and hindi literature in front of us and attract all the world.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Suwasara</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Suwasara is a town and a tehsil in Mandsaur district in the Indian state of Madhya Pradesh. It is located near the Rajasthan border. Suwasara is rich in agriculture and part of the Malwa region.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Bhanpura</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Bhanpura is a town and a nagar panchayat. It was also ruled by the Chandrawats of Mewar during the times of Rana Sanga's rule. The town is home to a number of historic places such as Chaturbhujnath Nala rock art shelters, and the Hinglajgarh Fort.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Garoth</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Garoth is a town in Madhya Pradesh state in central India. It is one of the tehsil of Mandsaur District.It shares boundary with Jhalawar district of Rajasthan.The local Language spoken here is a mixture of Mewari, Harauti and Malwi Languages.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Shamgarh</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Shamgarh is a City and a Nagar Parishad in Mandsaur district in the Indian state of Madhya Pradesh.The language or dialect spoken in this area is mixture of Mewari, Malwi and Harauti. Shamgarh is located at 24.18°N 75.63°E.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Daloda</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Daloda is a town and a tehsil in Mandsaur district in the Indian state of Madhya Pradesh. It is located on NH-31 ,22 KM far from mandsaur. Daloda is rich in agriculture and part of the Malwa region.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- tehsil section ends -->
+
+
+<div>
+   <h3 class="heading">Administrative Setup</h3>
+   <p class="subPara">Mandsaur district administration is headed by the District Magistrate of Mandsaur. The DM is assisted by a Chief Executive Officer (CEO), Additional District Magistrate (ADM).</p>
+   <p class="subPara">The district is divided into 4 sub-divisions. Each sub-division headed by a Sub Divisional Magistrate.</p>
+   <h3 class="sub-heading">Collectorate</h3>
+   <p class="subPara">A district is an administrative division of a state. Each district in India has an officer-in-charge who represents the state governments in that area in the capacity of Collector/District Magistrate. The office of the collector, is the chief representative of government in a District. District Collectors are entrusted with a wide range of duties in the jurisdiction of the district, which generally involve :</p>
+ 
+   <h3 class="sub-heading1">As District Magistrate</h3>
+   <ul class="list">
+    <li>Maintenance of law and order.</li>
+    <li>Supervision of the police and jails.</li>
+    <li>Supervision of subordinate Executive Magistracy.</li>
+    <li>Hearing cases under the preventive section of the Criminal Procedure Code.</li>
+    <li>Supervision of jails and certification of execution of capital sentences.</li>
+    <li>Arbitrator of land acquisition.</li>
+    <li>Disaster management during natural calamities such as floods, famines or epidemics.</li>
+    <li>Crisis management during riots or external aggression.</li>
+   </ul> 
+
+   <h3 class="sub-heading1">As Collector</h3>
+   <ul class="list">
+    <li>Land assessment.</li>
+    <li>Land acquisition.</li>
+    <li>Collection.</li>
+    <li>Collection of excise duties, irrigation dues etc.</li>
+    <li>Distribution of agricultural loans.</li>
+    <li>Chairman of the District Bankers Coordination Committee.</li>
+    <li>Head of the District Industries Centre.</li>
+   </ul>
+
+   <h3 class="sub-heading">Tehsil and Village</h3>
+   <table class="villages">
+      <thead class="villages-1">
+        <tr>
+          <th scope="col">Serial No.</th>
+          <th scope="col">Tehsil</th>
+          <th scope="col">No. of villages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01.</td>
+          <th scope="row">Mandsaur</th>
+          <td>168</td>
+        </tr>
+        <tr>
+          <td>02.</td>
+          <th scope="row">Malhargarh</th>
+          <td>174</td>
+        </tr>
+        <tr>
+          <td>03.</td> 
+          <th scope="row">Sitamau</th>
+          <td>173</td>
+        </tr>
+        <tr>
+          <td>04.</td>
+          <th scope="row">Suwasara</th>
+          <td>78</td>
+        </tr>
+        <tr>
+          <td>05.</td>
+          <th scope="row">Bhanpura</th>
+          <td>96</td>
+        </tr>
+        <tr>
+         <td>06.</td>
+          <th scope="row">Garoth</th>
+          <td>107</td>
+        </tr>
+        <tr>
+          <td>07.</td>
+          <th scope="row">Shamgarh</th>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>08.</td>
+          <th scope="row">Daloda</th>
+          <td>61</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>09.</td>
+          <th scope="row">Total villages</th>
+          <td >955</td>
+        </tr>
+      </tfoot>
+   </table>
+    
+</div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+   <div class="row">
+      <div class="footer-col">
+         <h4>Nearby Us</h4>
+         <ul>
+            <li><a href="subHTML/about us.html">about us</a></li>
+            <li><a href="subHTML/feedback.html">send feedback</a></li>
+            <li><a href="subHTML/privacy policy.html">privacy policy</a></li>
+            <li><a href="subHTML/terms & conditions.html">terms & conditions</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>Quick links</h4>
+         <ul>
+            <li><a href="https://mphc.gov.in/" target="_blank">MP High Court</a></li>
+            <li><a href="http://mpedistrict.gov.in/MPL/Home.aspx" target="_blank">MP e-District Portal</a></li>
+            <li><a href="https://www.mppolice.gov.in/en" target="_blank">MP Police Portal</a></li>
+            <li><a href="https://cmhelpline.mp.gov.in/Mpsamadhan/" target="_blank">MP Samadhan Portal</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>newsletter</h4>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="Enter your Email" id="" class="email" required>
+            <input type="submit" value="subscribe" class="btn" onclick="submitted()">
+         </form>
+      </div>
+      <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com/accounts/login" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="copyright"> Copyright &#169;<span>Nearby Us</span> All Rights Reserved.</div>
+</section>
+
+<!-- footer section ends -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

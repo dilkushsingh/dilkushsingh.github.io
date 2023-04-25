@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mandsaur District - NearbyUs</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7.4.1/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo"><img src="images/favicon.png" alt="logo" ></a>
+   
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="index.html">home</a>
+      <a href="tourism.html">tourism</a>
+      <a href="internals.html">subdistricts & blocks</a>
+      <a href="citizen services.html">citizen services</a>
+      <a href="directory.html">directory</a>
+   </nav>
+
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" placeholder="Enter your Password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="Enter your Email" class="box" required>
+      <input type="password" id="pswd1" placeholder="Enter your Password" class="box" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <input type="password" id="pswd2" placeholder="confirm your password" class="box" required>
+      <input type="submit" value="register now" class="btn" onclick="matchPassword()">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+
+         <section class="swiper-slide slide" style="background: url(images/pashupatinath.jpg) no-repeat;">
+            <div class="content">
+               <h3>City of Lord Pashupatinath</h3>
+               <a href="#contents" class="btn">get started</a>
+            </div>
+         </section>
+         <section class="swiper-slide slide" style="background: url(images/gandhi-sagar.jpg) no-repeat;">
+            <div class="content">
+               <h3>Gandhi Sagar Dam</h3>
+               <a href="#contents" class="btn">get started</a>
+            </div>
+         </section>
+         <section class="swiper-slide slide" style="background: url(images/dhramrajeshwar.jpg) no-repeat;">
+            <div class="content">
+               <h3>Dharmrajeshwar</h3>
+               <a href="#contents" class="btn">get started</a>
+            </div>
+         </section>
+         <section class="swiper-slide slide" style="background: url(images/opium.JPG) no-repeat;">
+            <div class="content">
+               <h3>Opium Fields</h3>
+               <a href="#contents" class="btn">get started</a>
+            </div>
+         </section>
+         <section class="swiper-slide slide" style="background: url(images/pola-dungar.jpg) no-repeat;">
+            <div class="content">
+               <h3>Pola Dungar</h3>
+               <a href="#contents" class="btn">get started</a>
+            </div>
+         </section>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- contents section starts  -->
+<div class="">
+   <h1 class="contents" id="contents">Contents</h1>
+   <ol>
+      <a href="#contents"><li>1.Origin of name</li></a>
+      <a href="#geography"><li>2.Geography
+         <ol><li>2.1.climate</li></ol>
+      </li></a>
+      <a href="#industry"><li>3.Industry</li></a>
+      <a href="#divisions"><li>4.Division</li></a>
+      <a href="#demographics"><li>5.Demographics</li></a>
+      <a href="#culture"><li>6.Culture</li></a>
+   </ol>
+   
+   <h1 class="sub-heading" id="geography">Origin of name:</h1>
+   <div class="subPara">The District takes its name from the headquarters town, Mandsaur. It is considered to have been evolved from Marhsaur, originating from Marh and Saur or Dasaur, two of the villages which merged in the town. The town was known as Dashpur during ancient times. Other etymology claims it derives from Mandodari, wife of Ravana, who is said to have been born in the district.</div>
+
+   <h1 class="sub-heading" id="climate">Geography:</h1>
+   <div class="subPara">The district has an area of 9,791 km<sup>2</sup> (3,780 sq mi). The district is present on the border of the Mewar and Malwa so the culture is the combination of the both regions, and is bounded by Neemuch District to the north west, Chittorgarh district to North east, Kota district and Jhalawar district to east and Pratapgarh District, and Ratlam District to the south. It is part of Ujjain Division.
+   Mandsaur District forms the northern projection of Madhya Pradesh from its western Division, i.e., Ujjain Commissioner's Division. It lies between the parallels of latitude 230 45' 50" North and 250 2' 55" North, and between the meridians of longitude 740 42' 30" East and 750 50' 20" East.
+   The district is an average-size district of Madhya Pradesh. It extends for about 142 km (88 mi). from north to south and 124 km (77 mi) from east to west.</div>
+
+   <h1 class="sub-heading1">Climate:</h1>
+   <div class="subPara">The climate of this district is generally dry except in south-west monsoon. Year may be divided into four seasons. The cold season is from December to February. This is followed by the hot season from March to the middle of June. Thereafter the south-west monsoon season starts and continues up to about the middle of September.
+   The average annual rainfall in the District is 786.6 mm (30.97 in).</div>
+   <div class="subPara">The rainfall in the districts in the region round about Sitamau- Mandsaur- Malhargarh, and in general increases in the northern part of the district from the west towards the east. The heaviest rainfall in 24 hours recorded at any station in the district was 323.9 mm (12.75 in). at Garoth on 1945 June 29.
+   In the district there is rapid increase in temperatures after February. May is generally the hottest month with the mean daily maximum temperature at 39.80 °C (103.64 °F) and the mean daily minimum at 25.40 °C (77.72 °F).</div>
+   <div class="subPara" id="industry">Days are intensely hot in summer and hot dust-laden winds which below during this season add to the discomfort. On individual days in the summer session and in June before the onset of the monsoon the day temperatures often go up above 45 °C (113 °F). January is the coldest month, with the mean daily maximum temperature at 35.00 °C (95.00 °F) and mean daily minimum at 9.30 °C (48.74 °F).</div>
+
+   <h1 class="sub-heading" id="divisions">Industry:</h1>
+   <div class="subPara">Opium production and the slate pencil industry are important to the district's economy. Some parts of the district have wind farm.</div>
+
+   <h1 class="sub-heading" id="demographics">Divisions:</h1>
+   <div class="subPara">The district is divided into four sub divisions and eight tehsils. The sub divisional headquarters are at Mandsaur, Malhargarh, Sitamau and Garoth. Where, Mandsaur, Malhargah, Garoth, Shamgarh, Dalauda, Bhanpura, Suwasra and Sitamau are eight tehsils of District.
+   Vehicle number plates beginning with MP-14 are identified as a registered vehicle under the properly followed rules and regulations.</div>
+
+   <h1 class="sub-heading" id="culture">Demographics:</h1>
+   <div class="subPara">According to the 2011 census Mandsaur District has a population of 1,340,411,roughly equal to the nation of Mauritius or the US state of Maine.This gives it a ranking of 361st in India (out of a total of 640).The district has a population density of 242 inhabitants per square kilometre (630/sq mi) .Its population growth rate over the decade 2001-2011 was 13.19%.Mandsaur has a sex ratio of 966 females for every 1000 males, and a literacy rate of 72.75%. Scheduled Castes and Scheduled Tribes make up 18.58% and 2.47% of the population respectively.
+   At the time of the 2011 Census of India, 49.12% of the population in the district spoke Hindi and 28.57% Mewari as their first language.</div>
+
+   <h1 class="sub-heading">Culture:</h1>
+   <div class="subPara">The temple of Lord Pashupatinath is located on the bank of the Shivna. The most common language is mixture of Mewari and Malwi (Rajasthani).</div>
+
+</div>
+
+<div class="location">
+   <h3 class="heading">Map of District</h3>
+   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931183.081025297!2d74.84159467141858!3d24.26157041612789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39642e8f9cdaa9a1%3A0xf64177172d3f12c6!2sMandsaur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1655379607919!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- contents section ends -->
+
+<!-- tourism shortcut section start -->
+
+<section class="tourism">
+
+   <h1 class="heading">Tourism</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/tourism-1.png" alt="">
+         <h3>Pashupatinath Temple</h3>
+         <a href="subHTML/pashupatinath.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-2.png" alt="">
+         <h3>Gandhi sagar Dam</h3>
+         <a href="subHTML/gandhisagar.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-3.png" alt="">
+         <h3>Dharmrajeshwar temple</h3>
+         <a href="subHTML/dharmrajeshwar.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-4.png" alt="">
+         <h3>Bada Mahadev Waterfall</h3>
+         <a href="subHTML/bhanpura.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-5.png" alt="">
+         <h3>Chaturbhuj Rock Paintings</h3>
+         <a href="subHTML/chaturbhuj.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-6.png" alt="">
+         <h3>Hinglajgadh Fort</h3>
+         <a href="subHTML/hinglajgadh.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-7.png" alt="">
+         <h3>Pola Dungar</h3>
+         <a href="subHTML/pola-dungar.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-9.png" alt="">
+         <h3>Taksheshwar Takhaji</h3>
+         <a href="subHTML/takhaji.html" class="btn">Read more...</a>
+      </div>
+
+      <div class="box">
+         <img src="images/tourism-10.png" alt="">
+         <h3>Teliya Tank</h3>
+         <a href="subHTML/TT.html" class="btn">Read more...</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- tourism shortcut section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+   <div class="row">
+      <div class="footer-col">
+         <h4>Nearby Us</h4>
+         <ul>
+            <li><a href="subHTML/about us.html">about us</a></li>
+            <li><a href="subHTML/feedback.html">send feedback</a></li>
+            <li><a href="subHTML/privacy policy.html">privacy policy</a></li>
+            <li><a href="subHTML/terms & conditions.html">terms & conditions</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>Quick links</h4>
+         <ul>
+            <li><a href="https://mphc.gov.in/" target="_blank">MP High Court</a></li>
+            <li><a href="http://mpedistrict.gov.in/MPL/Home.aspx" target="_blank">MP e-District Portal</a></li>
+            <li><a href="https://www.mppolice.gov.in/en" target="_blank">MP Police Portal</a></li>
+            <li><a href="https://cmhelpline.mp.gov.in/Mpsamadhan/" target="_blank">MP Samadhan Portal</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+         <h4>newsletter</h4>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="Enter your Email" id="" class="email" required>
+            <input type="submit" value="subscribe" class="btn" onclick="submitted()">
+         </form>
+      </div>
+      <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://instagram.com/accounts/login" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="copyright"> Copyright &#169;<span>Nearby Us</span> All Rights Reserved.</div>
+</section>
+
+<!-- footer section ends -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
