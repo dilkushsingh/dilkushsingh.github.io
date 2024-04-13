@@ -30,7 +30,7 @@ $('#nav-toggle').click(function(){
 //Download CV
 document.getElementById('downloadButton').addEventListener('click', function() {
     var link = document.createElement('a');
-    link.href = 'assets/Dilkush_Singh_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1XLjV6iTCjgslaYhIPDzfCqtUdAAj8mfD/view?usp=drive_linkf';
     link.download = 'Dilkush Singh Resume.pdf';
     document.body.appendChild(link);
     link.click();
