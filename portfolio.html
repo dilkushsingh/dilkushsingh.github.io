@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Dilkush Singh">
+    <title>Dilkush Singh - Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <!-- Bootstrap + main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <img class="imglogo" src="assets/imgs/ds-logo.png">
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#myresume">My Resume</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#projects">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blogs">Blogs</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Dilkush Singh</span>
+            </h1>
+            <p class="header-subtitle">DATA SCIENTIST</p>
+            <button class="btn btn-primary" onclick="window.location.hash='#about'">About Me</button>
+        </div>
+    </header>
+    <!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/Dilkush_Singh_Pic.jpg" class="about-img" alt="dilkush-singh-photo">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>My name is <strong>Dilkush Singh</strong>, and I am a student with a keen interest in Data Science. Currently, I am pursuing a <strong>B.Tech CSE</strong> with specialization in <strong>Artificial Intelligence</strong> at Mandsaur University.</p>
+                    <p>I have a solid academic background, maintaining an average <strong>CGPA of over 7.7</strong> till the fifth semester. I achieved <strong>87.6%</strong> during my Senior Secondary Examination at Jawahar Navodaya Vidyalaya Laduna, also scored <strong>90.6%</strong> in my Secondary examination.</p>
+                    <p>I have completed the <strong>Data Science Professional Certificate</strong> by IBM on Coursera and have applied my knowledge to several projects, including the Bengaluru House Price Prediction. I am proficient in <strong>Python</strong> and its various libraries for <strong>Data Analysis</strong>, <strong>Statistics & Probability</strong>, as well as in <strong>Machine Learning Techniques</strong> and <strong>Deep Learning concepts</strong>.</p>
+                    <p>My passion is in the diverse domains of <strong>Data Science, AI, ML, and GenAI</strong>. I'm consistently enthusiastic about acquiring knowledge in emerging technologies to refine my skill set. </p>
+                    <button id="downloadButton" class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                </div>
+            </div>
+            <!-- end of about wrapper -->
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of about section -->
+
+    <!-- myresume section -->
+    <section class="section" id="myresume">
+        <div class="container text-center">
+            <p class="section-subtitle">Have a look at resume</p>
+            <h6 class="section-title mb-6">My Resume</h6>
+            <iframe src="assets/Dilkush_Singh_Resume.pdf" height="1000rem" width="90%" frameborder="0"></iframe>
+        </div>
+    </section>
+    <!-- end of myresume section -->
+
+    <!-- projects section -->
+    <section class="section" id="projects">
+        <div class="container text-center">
+            <p class="section-subtitle">What did I do?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <div class="row">
+                <div class="col-md-4" class="hover-link">
+                    <a href="https://google.com" class="portfolio-card" target="_blank">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Bengluru House Price Prediction <i class="fas fa-link"></i></h5>
+                                    <p class="font-weight-normal">Linear Regression</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4" class="hover-link">
+                    <a href="#" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Email Classifier <i class="fas fa-link"></i></h5>
+                                    <p class="font-weight-normal">Binary Classification</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4" class="hover-link">
+                    <a href="https://dilkushsingh.github.io/NearbyUs-Frontend-Web" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>NearbyUs <i class="fas fa-link"></i></h5>
+                                    <p class="font-weight-normal">Frontend Web Development</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end of container -->
+    </section> 
+    <!-- end of portfolio section -->
+
+    <!-- blog section -->
+    <section class="section" id="blogs">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">What did I write?</p>
+            <h6 class="section-title mb-6">Blogs</h6>
+            <div class='sk-ww-medium-publication-feed' data-embed-id='25396474'>blog</div><script src='assets/js/blog.js' async defer></script>
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of blog section -->
+
+    <!-- Hire me section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want me to join your team?</h6>
+                    <p class="m-0 text-light">Always feel free to Connect</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded"><a href="mailto:work.dilkushsingh@gmail.com">Drop a mail</a></button>
+                </div>
+            </div>
+        </div> 
+        <!-- end of container -->
+    </section> 
+    <!-- end of Hire me section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can we communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <footer class="text-center py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://linkedin.com/in/dilkushsingh/" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                                <br><strong>LinkedIn</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/dilkushsingh" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-github fa-lg"></i>
+                                <br><strong>GitHub</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://medium.com/@dilkushsingh" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-medium-m fa-lg"></i>
+                                <br><strong>Medium</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="mailto:work.dilkushsingh@gmail.com" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <br><strong>Email</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.hackerrank.com/profile/dilkushsingh" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-hackerrank fa-lg"></i>
+                                <br><strong>HackerRank</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://leetcode.com/dilkushsingh/" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <img class="fab brand-logo fa-lg" src="assets/imgs/leetcode_logo.ico"></img>
+                                <br><strong>Leetcode</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.geeksforgeeks.org/user/dilkushsingh/" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <img class="fab brand-logo fa-lg" src="assets/imgs/geeksforgeeks_logo.ico"></img>
+                                <br><strong>GeeksForGeeks</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://instagram.com/kr_dilkhushsinghrajput" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-instagram fa-lg"></i>
+                                <br><strong>Instagram</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <hr>
+            <p class="copyright" >Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; 
+                <a href="http://www.linkedin.com/in/dilkushsingh" target="_blank">Dilkush Singh</a>
+            </p>
+        </div>
+        <!-- end of container -->
+    </section>
+    <!-- end of contact section -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script> <!--imp-->
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script> <!--imp-->
+
+    <!-- Main js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
