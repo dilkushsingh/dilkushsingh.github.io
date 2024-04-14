@@ -92,8 +92,7 @@
         <div class="container text-center">
             <p class="section-subtitle">Have a look at resume</p>
             <h6 class="section-title mb-6">My Resume</h6>
-<!--             <iframe src="https://drive.google.com/file/d/1XLjV6iTCjgslaYhIPDzfCqtUdAAj8mfD/view?usp=sharing" height="1000rem" width="90%" frameborder="0"></iframe> -->
-            <iframe src="https://drive.google.com/file/d/1XLjV6iTCjgslaYhIPDzfCqtUdAAj8mfD/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1W5qS7P2OoXBZdxu6KJX0jhnduEp6vGWD/preview" height="1000rem" width="90%" frameborder="0"></iframe>
         </div>
     </section>
     <!-- end of myresume section -->
@@ -106,30 +105,29 @@
             <div class="row">
                 <div class="col-md-4" class="hover-link">
                     <a href="https://google.com" class="portfolio-card" target="_blank">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="project-thumbnail">
+                        <img src="assets/imgs/Banglore_house_price_prediction.jpg" class="portfolio-card-img" alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Bengluru House Price Prediction <i class="fas fa-link"></i></h5>
+                                <h4>Banglore House Price Prediction <i class="fas fa-link"></i></h5>
                                     <p class="font-weight-normal">Linear Regression</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4" class="hover-link">
-                    <a href="#" class="portfolio-card" target="_blank">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
-                            alt="project-thumbnail">
+                    <a href="https://dilkushsingh.github.io" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio-project.jpg" class="img-responsive rounded" alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Email Classifier <i class="fas fa-link"></i></h5>
-                                    <p class="font-weight-normal">Binary Classification</p>
+                                <h4>Portfolio Website<i class="fas fa-link"></i></h5>
+                                    <p class="font-weight-normal">Web Dev</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4" class="hover-link">
                     <a href="https://dilkushsingh.github.io/NearbyUs-Frontend-Web" class="portfolio-card" target="_blank">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="project-thumbnail">
+                        <img class="portfolio-card-img" src="assets/imgs/nearbyus_web.jpg" class="img-responsive rounded" alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>NearbyUs <i class="fas fa-link"></i></h5>
@@ -179,6 +177,27 @@
         <div class="container text-center">
             <p class="section-subtitle">How can we communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+                <input type="hidden" name="access_key" value="2306c947-0c5c-409c-ac42-570b53cfd3b2">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" name="email" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                    <input type="hidden" name="from_name" value="Contact Form">
+                    <input type="hidden" name="redirect" value="https://dilkushsingh.github.io/#contact">
+                </div>
+            </form><!-- end of contact form -->
             <footer class="text-center py-4">
                 <div class="container">
                     <div class="row">
@@ -259,6 +278,8 @@
 
     <!-- Main js -->
     <script src="assets/js/script.js"></script>
-</body>
 
+    <!-- Captcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
 </html>
