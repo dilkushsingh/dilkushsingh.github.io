@@ -460,8 +460,8 @@ h6, .h6 {
 }
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/*   margin-top: 1rem;
+  margin-bottom: 1rem; */
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -9124,12 +9124,12 @@ button.bg-dark:focus {
 
 .pr-4,
 .px-4 {
-  padding-right: 1.5rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .pb-4,
 .py-4 {
-  padding-bottom: 1.5rem !important;
+/*   padding-bottom: 1.5rem !important; */
 }
 
 .pl-4,
