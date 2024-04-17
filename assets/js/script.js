@@ -28,11 +28,28 @@ $('#nav-toggle').click(function(){
 });
 
 //Download CV
-document.getElementById('downloadButton').addEventListener('click', function() {
-    var link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1XLjV6iTCjgslaYhIPDzfCqtUdAAj8mfD/view?usp=sharing';
-    link.download = 'Dilkush Singh Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
+document.getElementById("downloadButton").onclick = function() {
+    window.location.href = 'https://drive.google.com/uc?export=download&id=1W5qS7P2OoXBZdxu6KJX0jhnduEp6vGWD';
+};l 
+
+//Form Reset
+//form reset
+window.onload = function() {
+    // Reset the form fields when the page loads
+    document.getElementById("form").reset();
+};
+
+function onSubmit(token) {
+    // Called when reCAPTCHA is successfully verified
+    document.getElementById("form").submit(); // Submit the form
+}
+
+function validateForm() {
+    // Check if reCAPTCHA is verified
+    if (grecaptcha.getResponse() === "") {
+        // reCAPTCHA not verified, display error message
+        alert("Please complete the reCAPTCHA.");
+        return false; // Prevent form submission
+    }
+    return true; // Proceed with form submission
+}
