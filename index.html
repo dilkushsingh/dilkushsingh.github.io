@@ -177,14 +177,14 @@
         <div class="container text-center">
             <p class="section-subtitle">How can we communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <form action="https://api.web3forms.com/submit" onsubmit="return validateForm();"  method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://api.web3forms.com/submit"  method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
                 <input type="hidden" name="access_key" value="2306c947-0c5c-409c-ac42-570b53cfd3b2">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control section-subtitle" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control section-subtitle" name="email" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control section-subtitle" name="email" placeholder="Your Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control section-subtitle"
@@ -193,10 +193,7 @@
 <!--                     <div class="h-captcha" data-captcha="true"></div> -->
                     <div class="g-recaptcha" data-sitekey="6Lcl5b0pAAAAAMP77RI7u7RCHXGOEKSurwZSLHqr"></div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input 
-    data-sitekey="6Lcl5b0pAAAAAMP77RI7u7RCHXGOEKSurwZSLHqr"
-    data-callback='onSubmit'
-    data-action='submit' type="submit" value="Send Message" class="g-recaptcha btn btn-outline-primary rounded">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
                     <input type="hidden" name="from_name" value="Contact Form">
                     <input type="hidden" name="redirect" value="https://dilkushsingh.github.io/#contact">
