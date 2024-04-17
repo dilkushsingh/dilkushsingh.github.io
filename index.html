@@ -177,20 +177,21 @@
         <div class="container text-center">
             <p class="section-subtitle">How can we communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://api.web3forms.com/submit" onsubmit="return validateForm();"  method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
                 <input type="hidden" name="access_key" value="2306c947-0c5c-409c-ac42-570b53cfd3b2">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control logotxt" name="name" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control section-subtitle" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control logotxt" name="email" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control section-subtitle" name="email" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control logotxt"
+                        <textarea name="comment" id="comment" rows="6" class="form-control section-subtitle"
                             placeholder="Please Write Something"></textarea>
                     </div>
 <!--                     <div class="h-captcha" data-captcha="true"></div> -->
+                    <div class="g-recaptcha" data-sitekey="6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c"></div>
                     <div class="form-group col-sm-12 mt-3">
                         <input 
     data-sitekey="6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c"
