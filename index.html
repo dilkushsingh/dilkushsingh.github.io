@@ -181,18 +181,21 @@
                 <input type="hidden" name="access_key" value="2306c947-0c5c-409c-ac42-570b53cfd3b2">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" name="name" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control logotxt" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" name="email" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control logotxt" name="email" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control logotxt"
+                            placeholder="Please Write Something"></textarea>
                     </div>
-                    <div class="h-captcha" data-captcha="true"></div>
+<!--                     <div class="h-captcha" data-captcha="true"></div> -->
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <input 
+    data-sitekey="6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c"
+    data-callback='onSubmit'
+    data-action='submit' type="submit" value="Send Message" class="g-recaptcha btn btn-outline-primary rounded">
                     </div>
                     <input type="hidden" name="from_name" value="Contact Form">
                     <input type="hidden" name="redirect" value="https://dilkushsingh.github.io/#contact">
@@ -281,5 +284,7 @@
 
     <!-- Captcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c"></script>
+
 </body>
 </html>
