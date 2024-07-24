@@ -8,11 +8,13 @@
     <meta name="author" content="Dilkush Singh">
     <title>Dilkush Singh - Portfolio</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.ico">
     <!-- Bootstrap + main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji:wght@400;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -56,7 +58,7 @@
                 <span class="up">HI!</span>
                 <span class="down">I am Dilkush Singh</span>
             </h1>
-            <p class="header-subtitle">DATA SCIENTIST</p>
+            <p class="header-subtitle">DATA ENTHUSIAST</p>
             <button class="btn btn-primary" onclick="window.location.hash='#about'">About Me</button>
         </div>
     </header>
@@ -69,15 +71,26 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/Dilkush_Singh_Pic.jpg" class="about-img" alt="dilkush-singh-photo">
+                    <img src="assets/imgs/Dilkush_Singh.jpg" class="about-img" alt="dilkush-singh-photo">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                    <p>My name is <strong>Dilkush Singh</strong>, and I am a student with a keen interest in Data Science. Currently, I am pursuing a <strong>B.Tech CSE</strong> with specialization in <strong>Artificial Intelligence</strong> at Mandsaur University.</p>
-                    <p>I have a solid academic background, maintaining an average <strong>CGPA of over 7.7</strong> till the fifth semester. I achieved <strong>87.6%</strong> during my Senior Secondary Examination at Jawahar Navodaya Vidyalaya Laduna, also scored <strong>90.6%</strong> in my Secondary examination.</p>
-                    <p>I have completed the <strong>Data Science Professional Certificate</strong> by IBM on Coursera and have applied my knowledge to several projects, including the Bengaluru House Price Prediction. I am proficient in <strong>Python</strong> and its various libraries for <strong>Data Analysis</strong>, <strong>Statistics & Probability</strong>, as well as in <strong>Machine Learning Techniques</strong> and <strong>Deep Learning concepts</strong>.</p>
-                    <p>My passion is in the diverse domains of <strong>Data Science, AI, ML, and GenAI</strong>. I'm consistently enthusiastic about acquiring knowledge in emerging technologies to refine my skill set. </p>
+                    <p>My name is <strong>Dilkush Singh</strong>, and I am a student with a keen interest in Data
+                        Science. Currently, I am pursuing a <strong>B.Tech CSE</strong> with specialization in
+                        <strong>Artificial Intelligence</strong> at Mandsaur University.</p>
+                    <p>I have a solid academic background, maintaining an average <strong>CGPA of over 7.7</strong> till
+                        the fifth semester. I achieved <strong>87.6%</strong> during my Senior Secondary Examination at
+                        Jawahar Navodaya Vidyalaya Laduna, also scored <strong>90.6%</strong> in my Secondary
+                        examination.</p>
+                    <p>I have completed the <strong>Data Science Professional Certificate</strong> by IBM on Coursera
+                        and have applied my knowledge to several projects, including the Bengaluru House Price
+                        Prediction. I am proficient in <strong>Python</strong> and its various libraries for
+                        <strong>Data Analysis</strong>, <strong>Statistics & Probability</strong>, as well as in
+                        <strong>Machine Learning Techniques</strong> and <strong>Deep Learning concepts</strong>.</p>
+                    <p>My passion is in the diverse domains of <strong>Data Analytics, Data Science, AI, ML, and GenAI</strong>. I'm
+                        consistently enthusiastic about acquiring knowledge in emerging technologies to refine my skill
+                        set. </p>
                     <button id="downloadButton" class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
                 </div>
             </div>
@@ -92,9 +105,11 @@
         <div class="container text-center">
             <p class="section-subtitle">Have a look at resume</p>
             <h6 class="section-title mb-6">My Resume</h6>
-            <iframe src="https://drive.google.com/file/d/1W5qS7P2OoXBZdxu6KJX0jhnduEp6vGWD/preview" height="1000rem" width="90%" frameborder="0"></iframe>
+            <iframe src="https://drive.google.com/file/d/19uPRC3bPlhjcPCc6amKZ7CMCyp8Zt0g6/preview" height="1000rem"
+                width="90%" frameborder="0"></iframe>
         </div>
     </section>
+
     <!-- end of myresume section -->
 
     <!-- projects section -->
@@ -102,44 +117,99 @@
         <div class="container text-center">
             <p class="section-subtitle">What did I do?</p>
             <h6 class="section-title mb-6">Projects</h6>
-            <div class="row">
-                <div class="col-md-4" class="hover-link">
-                    <a href="https://google.com" class="portfolio-card" target="_blank">
-                        <img src="assets/imgs/Banglore_house_price_prediction.jpg" class="portfolio-card-img" alt="project-thumbnail">
+            <div class="row" id="project-container">
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img src="assets/imgs/facial_emotion_recognizer.jpg" class="portfolio-card-img"
+                            alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Banglore House Price Prediction <i class="fas fa-link"></i></h5>
-                                    <p class="font-weight-normal">Linear Regression</p>
+                                <h4>Facial Emotion Recognizer</h4>
+                                <p class="font-weight-normal">Convolutional Neural Network</p>
                             </span>
                         </span>
-                    </a>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https://github.com/dilkushsingh/Facial_Emotion_Recognizer" target="_blank"> Code
+                        </a>|<a href="https://huggingface.co/spaces/dilkushsingh/Facial_Emotion_Recognizer" target="_blank"> Deploy</a></h5>
                 </div>
-                <div class="col-md-4" class="hover-link">
-                    <a href="https://dilkushsingh.github.io" class="portfolio-card" target="_blank">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio-project.jpg" class="img-responsive rounded" alt="project-thumbnail">
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img src="assets/imgs/Kidney_Stone_template.jpg" class="portfolio-card-img"
+                            alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Portfolio Website<i class="fas fa-link"></i></h5>
-                                    <p class="font-weight-normal">Web Dev</p>
+                                <h4>Kidney Stone Detection</h4>
+                                <p class="font-weight-normal">Extra Tree Classifier</p>
                             </span>
                         </span>
-                    </a>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https://github.com/dilkushsingh/Kidney-Stone-Detection" target="_blank"> Code
+                        </a>|<a href="https://huggingface.co/spaces/dilkushsingh/Kidney_Stone_Detection" target="_blank"> Deploy</a></h5>
                 </div>
-                <div class="col-md-4" class="hover-link">
-                    <a href="https://dilkushsingh.github.io/NearbyUs-Frontend-Web" class="portfolio-card" target="_blank">
-                        <img class="portfolio-card-img" src="assets/imgs/nearbyus_web.jpg" class="img-responsive rounded" alt="project-thumbnail">
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img src="assets/imgs/iris_project_template.jpg" class="portfolio-card-img"
+                            alt="project-thumbnail">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>NearbyUs <i class="fas fa-link"></i></h5>
-                                    <p class="font-weight-normal">Frontend Web Development</p>
+                                <h4>Iris Species Classifier</h4>
+                                <p class="font-weight-normal">Random Forest Classifier</p>
                             </span>
                         </span>
-                    </a>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https://github.com/dilkushsingh/Iris-Species-Classifier" target="_blank"> Code
+                        </a>|<a href="https://iris-species-classifier-ds.streamlit.app/" target="_blank"> Deploy</a></h5>
+                </div>
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img src="assets/imgs/Banglore_house_price_prediction.jpg" class="portfolio-card-img"
+                            alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Banglore Apartment Price Prediction</h4>
+                                <p class="font-weight-normal">Ridge Regression</p>
+                            </span>
+                        </span>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https://github.com/dilkushsingh/Bangalore-Apartment-Price-Predictor" target="_blank"> Code
+                        </a>|<a href="https:dilkusingh.github.io" target="_blank"> Deploy</a></h5>
+                </div>
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/portfolio-project.jpg"
+                            class="img-responsive rounded" alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Portfolio Website</h4>
+                                <p class="font-weight-normal">Frontend Web Dev</p>
+                            </span>
+                        </span>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https://github.com/dilkushsingh/dilkushsingh.github.io"
+                            target="_blank"> Code </a>|<a href="https:dilkusingh.github.io" target="_blank"> Deploy</a>
+                    </h5>
+                </div>
+                <div class="col-md-4 project-item">
+                    <p class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/nearbyus_web.jpg"
+                            class="img-responsive rounded" alt="project-thumbnail">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>NearbyUs</h4>
+                                <p class="font-weight-normal">Frontend Web Dev</p>
+                            </span>
+                        </span>
+                    </p>
+                    <h5><i class="fas fa-link"></i><a href="https:///github.com/dilkushsingh/NearbyUs-Frontend-Web"
+                            target="_blank"> Code </a> | <a href="https:dilkushsingh.github.io/NearbyUs-Frontend-Web"
+                            target="_blank"> Deploy</a>
                 </div>
             </div>
+            <br>
+            <button id="see-more-btn" class="btn  btn-rounded btn-primary mt-4">See More</button>
         </div>
         <!-- end of container -->
-    </section> 
+    </section>
     <!-- end of portfolio section -->
 
     <!-- blog section -->
@@ -148,7 +218,7 @@
         <div class="container text-center">
             <p class="section-subtitle">What did I write?</p>
             <h6 class="section-title mb-6">Blogs</h6>
-            <div class='sk-ww-medium-publication-feed' data-embed-id='25396474'>blog</div><script src='assets/js/blog.js' async defer></script>
+            <div id="medium-post" class="grid-container">Loading Medium posts...</div>
         </div>
         <!-- end of container -->
     </section>
@@ -164,12 +234,13 @@
                     <p class="m-0 text-light">Always feel free to Connect</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded"><a href="mailto:work.dilkushsingh@gmail.com">Drop a mail</a></button>
+                    <button class="btn btn-lg my-font btn-light rounded"><a
+                            href="mailto:work.dilkushsingh@gmail.com">Drop a mail</a></button>
                 </div>
             </div>
-        </div> 
+        </div>
         <!-- end of container -->
-    </section> 
+    </section>
     <!-- end of Hire me section -->
 
     <!-- contact section -->
@@ -177,28 +248,32 @@
         <div class="container text-center">
             <p class="section-subtitle">How can we communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <form action="https://api.web3forms.com/submit"  method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://api.web3forms.com/submit" id="contact-form" method="POST"
+                class="contact-form col-md-10 col-lg-8 m-auto">
                 <input type="hidden" name="access_key" value="2306c947-0c5c-409c-ac42-570b53cfd3b2">
                 <div class="form-row">
+                    <input type="hidden" name="subject" value="New Submission from Portfolio Website">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control section-subtitle" name="name" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control" name="name" placeholder="Your Name Please" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control section-subtitle" name="email" placeholder="Your Email" requried>
+                        <input type="email" class="form-control" name="email" placeholder="Your Email so I can revert back to you" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control section-subtitle"
-                            placeholder="Please Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something" required></textarea>
                     </div>
                     <div class="h-captcha" data-captcha="true"></div>
-                    <input type="hidden" name="subject" value="New Submission from Portfolio Website">
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <input data-sitekey="6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c" data-callback='onSubmit'
+                            data-action='submit' type="submit" value="Send Message"
+                            class="g-recaptcha btn btn-outline-primary rounded">
                     </div>
                     <input type="hidden" name="from_name" value="Contact Form">
                     <input type="hidden" name="redirect" value="https://dilkushsingh.github.io/#contact">
                 </div>
             </form><!-- end of contact form -->
+            <div id="form-message" style="margin-top: 20px;"></div>
             <footer class="text-center py-4">
                 <div class="container">
                     <div class="row">
@@ -206,64 +281,71 @@
                             <a href="https://linkedin.com/in/dilkushsingh/" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fab fa-linkedin fa-lg"></i>
-                                <br><p class="logotxt">LinkedIn</p>
+                                <br><strong>LinkedIn</strong></p>
                             </a>
                         </div>
                         <div class="col">
                             <a href="https://github.com/dilkushsingh" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fab fa-github fa-lg"></i>
-                                <br><p class="logotxt">GitHub</p>
+                                <br><strong>GitHub</strong>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://kaggle.com/dilkushsingh" target="_blank"
+                                class="text-decoration-none text-dark">
+                                <i class="fab fa-kaggle fa-lg"></i>
+                                <br><strong>Kaggle</strong>
                             </a>
                         </div>
                         <div class="col">
                             <a href="https://medium.com/@dilkushsingh" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fab fa-medium-m fa-lg"></i>
-                                <br><p class="logotxt">Medium</p>
+                                <br><strong>Medium</strong>
                             </a>
                         </div>
                         <div class="col">
                             <a href="mailto:work.dilkushsingh@gmail.com" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fas fa-envelope fa-lg"></i>
-                                <br><p class="logotxt">Email</p>
+                                <br><strong>Email</strong>
                             </a>
                         </div>
                         <div class="col">
                             <a href="https://www.hackerrank.com/profile/dilkushsingh" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fab fa-hackerrank fa-lg"></i>
-                                <br><p class="logotxt">HackerRank</p>
+                                <br><strong>HackerRank</strong>
                             </a>
                         </div>
-<!--                         <div class="col">
+                        <!-- <div class="col">
                             <a href="https://leetcode.com/dilkushsingh/" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <img class="fab brand-logo fa-lg" src="assets/imgs/leetcode_logo.ico"></img>
-                                <br><p class="logotxt">Leetcode</p>
+                                <br><strong>Leetcode</strong>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="col">
                             <a href="https://www.geeksforgeeks.org/user/dilkushsingh/" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <img class="fab brand-logo fa-lg" src="assets/imgs/geeksforgeeks_logo.ico"></img>
-                                <br><p class="logotxt">GeeksForGeeks</p>
+                                <br><strong>GeeksForGeeks</strong>
                             </a>
                         </div>
-                        <div class="col">
+                        <!-- <div class="col">
                             <a href="https://instagram.com/kr_dilkhushsinghrajput" target="_blank"
                                 class="text-decoration-none text-dark">
                                 <i class="fab fa-instagram fa-lg"></i>
-                                <br><p class="logotxt">Instagram</p>
+                                <br><strong>Instagram</strong>
                             </a>
                         </div> -->
                     </div>
                 </div>
             </footer>
             <hr>
-            <p class="copyright" >Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; 
+            <p class="copyright">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy;
                 <a href="http://www.linkedin.com/in/dilkushsingh" target="_blank">Dilkush Singh</a>
             </p>
         </div>
@@ -282,7 +364,5 @@
 
     <!-- Captcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lev0L0pAAAAAKPVGqfNh3H34sniGV4yeWLh_v4c"></script>
 
-</body>
 </html>

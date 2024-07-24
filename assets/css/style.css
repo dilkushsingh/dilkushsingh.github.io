@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+/* @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i"); */
+
 :root {
   --blue: #1e549f;
   --indigo: #695aa6;
@@ -38,7 +39,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -59,6 +60,15 @@ body {
   margin: 0;
 }
 
+/* .navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: white; /* Change to your desired color 
+} */
+
+
 .hover-link i {
   display: none;
 }
@@ -75,7 +85,7 @@ body {
 .copyright{
   margin-bottom: 0px;
   font-family: 'Baloo Paaji';
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .brand-logo{
@@ -110,6 +120,7 @@ body {
   font-size: 1rem;
 }
 
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -127,8 +138,147 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
+
+/* showing projects in batches of 6 */
+.project-item {
+  display: none;
+}
+
+.project-item.visible {
+  display: block;
+}
+
+/* Medium Post Integration Start */
+
+/* Grid container for the Medium posts */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for each Medium post card */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the post image */
+.post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Styling for the post title */
+.card h2 {
+  font-size: 1.5em;
+  margin: 15px;
+}
+
+.card h2 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the post paragraph */
+.card p {
+  font-size: 1em;
+  margin: 15px;
+  color: #666;
+}
+
+/* Styling for the Read More button */
+.read-more {
+  display: block;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 10px 20px;
+  border: 2px solid #695aa6;
+  border-radius: 100px;
+  background-color: white;
+  color: #695aa6;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #695aa6;
+  color: white;
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .post-image {
+      height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .post-image {
+      height: 150px;
+  }
+
+  .card h2 {
+      font-size: 1.2em;
+  }
+
+  .card p {
+      font-size: 0.9em;
+  }
+
+  .read-more {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .post-image {
+      height: 120px;
+  }
+
+  .card h2 {
+      font-size: 1em;
+  }
+
+  .card p {
+      font-size: 0.8em;
+  }
+
+  .read-more {
+      font-size: 0.8em;
+  }
+}
+
+/* Medium Post Integration End */
 
 abbr[title],
 abbr[data-original-title] {
@@ -430,11 +580,11 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.80rem;
 }
 
 .lead {
@@ -11235,6 +11385,7 @@ p {
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
+  margin-top: 1rem;
 }
 
 .portfolio-card .portfolio-card-overlay {
@@ -11275,13 +11426,13 @@ p {
   width: 100%;
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
+/* .portfolio-card:hover .portfolio-card-overlay {
   opacity: 1;
   visibility: visible;
   width: 100%;
   height: 100%;
   border-radius: 0;
-}
+} */
 
 @media (max-width: 767.98px) {
   .portfolio-card {
@@ -11290,13 +11441,13 @@ p {
   .service-card {
     margin-bottom: 30px;
   }
-  .portfolio-card .portfolio-card-overlay {
+  /* .portfolio-card .portfolio-card-overlay {
   opacity: 1;
   visibility: visible;
   width: 100%;
   height: 100%;
   border-radius: 0;
-}
+} */
 }
 
 /* Pricing card */
@@ -11746,7 +11897,7 @@ pre .code {
   color: #212529;
   font-weight: 500;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .custom-navbar .nav .item .link:hover, .custom-navbar .nav .item .link.active {
